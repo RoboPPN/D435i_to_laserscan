@@ -1,0 +1,5 @@
+<launch>
+<include file="$(find realsense2_camera)/launch/rs_camera.launch"></include>
+<include file="$(find depthimage_to_laserscan)/launch/launchfile_sample.launch"></include>
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(find depthimage_to_laserscan)/launch/depthimage_to_scan.rviz" ></node>
+</launch>
